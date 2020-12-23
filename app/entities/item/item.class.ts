@@ -1,4 +1,6 @@
-export abstract class Item {
+import { Upgradeable } from "../../interfaces/upgradeable.interface";
+
+export abstract class Item implements Upgradeable{
     public name: string;
     public sellIn: number;
     public quality: number;
@@ -10,5 +12,4 @@ export abstract class Item {
     }
 
     public update() {}
-
 }

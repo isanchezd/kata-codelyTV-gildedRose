@@ -9,7 +9,7 @@ export class ConjuredItem extends Item implements Upgradeable{
 
     public update() {
         this.sellIn -= 1;
-        this.quality -= this.quality  >= 0 ? this.sellIn < 0 ? 2 * 2 : 1 * 2 : 0;
+        this.quality -= this.quality  > 0 ? this.sellIn < 0 ? 2 * 2 : 1 * 2 : 0;
     }
     
 }

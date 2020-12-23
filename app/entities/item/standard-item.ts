@@ -9,7 +9,7 @@ export class StandardItem extends Item implements Upgradeable{
 
     public update() {
         this.sellIn -= 1;
-        this.quality -= this.quality  >= 0 ? this.sellIn < 0 ? 2 : 1 : 0;
+        this.quality -= this.quality > 0 ? this.sellIn < 0 ? 2 : 1 : 0;
     }
     
 }

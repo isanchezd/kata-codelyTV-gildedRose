@@ -9,7 +9,7 @@ export class AgedItem extends Item implements Upgradeable {
 
     public update() {
         this.sellIn -= 1;
-        this.quality += this.sellIn <= 0 ? 2 : 1;
+        this.quality += this.sellIn < 0 ? 2 : 1;
     }
 
 }
