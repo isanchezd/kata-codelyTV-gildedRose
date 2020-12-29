@@ -1,12 +1,11 @@
 import { expect } from 'chai';
 import { LegendaryItem } from '../app/entities/item/legendary-item.class';
 
-describe('Legendary Item', function () {
+describe('LegendaryItem Suite', function () {
 
     it('After execute the update method the quality and the sellIn must be equal than initial values', 
     () => {
-        const item = new LegendaryItem("+5 Dexterity Vest");
-        item.update();
+        const item = new LegendaryItem("Sulfuras item");
 
         expect(item.quality).to.equal(80);
         expect(item.sellIn).to.equal(1);

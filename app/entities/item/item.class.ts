@@ -1,6 +1,4 @@
-import { Upgradeable } from "../../interfaces/upgradeable.interface";
-
-export abstract class Item implements Upgradeable{
+export abstract class Item {
     public name: string;
     public sellIn: number;
     public quality: number;

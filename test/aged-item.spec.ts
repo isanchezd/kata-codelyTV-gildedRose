@@ -17,7 +17,7 @@ describe('Aged Item', function () {
 
     it('The quality cannot be major than 50', 
     () => {
-        const initialQuality = 52;
+        const initialQuality = 50;
         const initialSellIn = 10;
 
         const item = new AgedItem("+5 Dexterity Vest", initialSellIn, initialQuality)

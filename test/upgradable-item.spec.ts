@@ -1,24 +1,24 @@
 import { expect } from 'chai';
-import { StandardItem } from '../app/entities/item/standard-item';
+import { UpgradeableItem } from '../app/entities/item/upgradeable-item.class';
 
-describe('StandarItem Suite', function () {
+describe('UpgradableItem Suite', function () {
 
     it('After execute the item update the values of quality and sellIn should be minor that initial value', 
     () => {
         const initialQuality = 10;
         const initialSellIn = 15;
-        const item = new StandardItem("+5 Dexterity Vest", initialSellIn, initialQuality);
+        const item = new UpgradeableItem("+5 Dexterity Vest", initialSellIn, initialQuality);
         item.update();
 
-        expect(item.quality).to.equal(initialQuality -1);
-        expect(item.sellIn).to.equal(initialSellIn -1);
+        expect(item.quality).to.equal(initialQuality - 1 );
+        expect(item.sellIn).to.equal(initialSellIn - 1 );
     });
 
     it('After execute the item update the value of quality cannot be minor than 0', 
     () => {
         const initialQuality = 0;
         const initialSellIn = 15;
-        const item = new StandardItem("+5 Dexterity Vest", initialSellIn, initialQuality);
+        const item = new UpgradeableItem("+5 Dexterity Vest", initialSellIn, initialQuality);
         item.update();
 
         expect(item.quality).to.equal(0);
@@ -28,7 +28,7 @@ describe('StandarItem Suite', function () {
     () => {
         const initialQuality = 10;
         const initialSellIn = 0;
-        const item = new StandardItem("+5 Dexterity Vest", initialSellIn, initialQuality);
+        const item = new UpgradeableItem("+5 Dexterity Vest", initialSellIn, initialQuality);
         item.update();
 
         expect(item.quality).to.equal(initialQuality - 2);
@@ -38,7 +38,7 @@ describe('StandarItem Suite', function () {
     () => {
         const initialQuality = 1;
         const initialSellIn = 0;
-        const item = new StandardItem("+5 Dexterity Vest", initialSellIn, initialQuality);
+        const item = new UpgradeableItem("+5 Dexterity Vest", initialSellIn, initialQuality);
         item.update();
 
         expect(item.quality).to.equal(0);
