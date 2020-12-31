@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { StandardItem } from '../app/entities/item/standard-item';
 
-describe('StandarItem Suite', function () {
+describe('StandarItem Suite', () => {
 
     it('After execute the item update the values of quality and sellIn should be minor that initial value', 
     () => {

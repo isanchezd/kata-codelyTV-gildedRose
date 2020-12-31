@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { AgedItem } from '../app/entities/item/aged-item.class';
 
-describe('Aged Item', function () {
+describe('AgedItem Suite', () => {
 
     it('After execute the update method the quality must be major than initial value and the sellIn must be minor than initial values', 
     () => {

@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 import { UpgradeableItem } from '../app/entities/item/upgradeable-item.class';
 
-describe('UpgradableItem Suite', function () {
+describe('UpgradableItem Suite', () => {
 
     it('After execute the item update the values of quality and sellIn should be minor that initial value', 
     () => {

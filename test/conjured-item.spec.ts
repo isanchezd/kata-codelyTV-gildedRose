@@ -2,7 +2,7 @@ import { expect } from 'chai';
 import { ConjuredItem } from '../app/entities/item/conjured-item.class';
 
 
-describe('ConjuredItem Suite', function () {
+describe('ConjuredItem Suite',  () => {
 
     it('After execute the item update the values of quality and sellIn should be minor that initial value', 
     () => {
