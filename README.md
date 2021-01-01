@@ -8,6 +8,6 @@ This repository contains a kata exercise to implement the SOLID principles learn
 
 ## Authors and acknowledgment
 
-- [Emily Bache] (https://github.com/emilybache)
-- [Codely TV] (https://github.com/CodelyTV)
+- [Emily Bache](https://github.com/emilybache)
+- [Codely TV](https://github.com/CodelyTV)
 
