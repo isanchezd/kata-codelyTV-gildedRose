@@ -1,4 +1,4 @@
-export abstract class Item {
+export class Item {
     public name: string;
     public sellIn: number;
     public quality: number;
@@ -9,5 +9,4 @@ export abstract class Item {
         this.quality = quality;
     }
 
-    public update() {}
 }
